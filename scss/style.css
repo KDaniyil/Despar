@@ -1,0 +1,181 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+}
+.topbar .logo {
+  padding: 25px 30px;
+  margin-right: 80px;
+}
+.topbar .menu {
+  display: flex;
+}
+.topbar .menu-item {
+  padding: 0 15px;
+}
+.topbar .menu-item-link {
+  font-size: 18px;
+  color: black;
+  transition: all 0.5s ease;
+}
+.topbar .menu-item-link:hover {
+  font-weight: bold;
+  transition: all 0.5s ease;
+}
+
+.header-content {
+  width: 100%;
+}
+.header-content-images {
+  height: 951px;
+  background-color: #5aaee8;
+  position: relative;
+}
+.header-content-images .nuvola {
+  position: absolute;
+  top: 415px;
+  overflow: hidden;
+}
+.header-content-images .nuvola img {
+  margin-left: -150px;
+}
+.header-content-images .nuvola2 {
+  position: absolute;
+  right: 10px;
+  top: 88px;
+}
+.header-content-images .nuvola3 {
+  position: absolute;
+  top: 50px;
+}
+.header-content-images .despar-tribu {
+  position: absolute;
+  top: 72px;
+  left: 356px;
+  z-index: 5;
+}
+.header-content-images .pino {
+  position: absolute;
+  top: 43px;
+  right: 108px;
+  z-index: 6;
+}
+.header-content-images .nuvola-bottom {
+  width: 100%;
+  background: url("../images/pezza.png") no-repeat;
+  height: 235px;
+  position: absolute;
+  bottom: 0;
+  border-bottom: 5px solid #ffffff;
+}
+.header-content-text {
+  height: 578px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  padding-top: 160px;
+}
+.header-content-text .content-title {
+  flex: 50%;
+  max-width: 470px;
+  font-size: 98px;
+  font-weight: bold;
+  margin-right: 90px;
+}
+.header-content-text .content-title span {
+  display: inline-block;
+  background-image: url("../images/face.svg");
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+}
+.header-content-text .content-desc {
+  flex: 50%;
+  max-width: 605px;
+}
+.header-content-text .content-desc .desc-main {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.header-content-text .content-desc .desc-main span {
+  color: #5aaee8;
+}
+.header-content-text .content-desc .desc-sub {
+  font-size: 22px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: clip;
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 575px) {
+  body {
+    max-width: 360px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1729px;
+  margin: 0 auto;
+}/*# sourceMappingURL=style.css.map */

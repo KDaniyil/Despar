@@ -1,0 +1,28 @@
+@import "./reset";
+@import "./variables";
+@import "./mixins";
+@import "./header";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: clip;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (max-width:575px) {
+        max-width: 360px;
+    }
+}
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1729px;
+    margin: 0 auto;
+}

@@ -1,0 +1,117 @@
+.topbar {
+    display: flex;
+    align-items: center;
+
+    .logo {
+        padding: 25px 30px;
+        margin-right: 80px;
+    }
+
+    .menu {
+        display: flex;
+
+        &-item {
+            padding: 0 15px;
+        }
+
+        &-item-link {
+            font-size: 18px;
+            color: black;
+            @include transitionEff;
+
+            &:hover {
+                font-weight: bold;
+                @include transitionEff;
+            }
+        }
+
+    }
+}
+
+.header-content {
+    width: 100%;
+    &-images {
+        height: 951px;
+        background-color: $colorBlue;
+        position: relative;
+        .nuvola {
+            position: absolute;
+            top: 415px;
+            overflow: hidden;
+
+            img {
+                margin-left: -150px;
+            }
+        }
+
+        .nuvola2 {
+            position: absolute;
+            right: 10px;
+            top: 88px;
+        }
+
+        .nuvola3 {
+            position: absolute;
+            top: 50px;
+        }
+
+        .despar-tribu {
+            position: absolute;
+            top: 72px;
+            left: 356px;
+            z-index: 5;
+        }
+
+        .pino {
+            position: absolute;
+            top: 43px;
+            right: 108px;
+            z-index: 6;
+        }
+        .nuvola-bottom{
+            width: 100%;
+            background: url("../images/pezza.png") no-repeat;
+            height: 235px;
+            position: absolute;
+            bottom: 0;
+            border-bottom: 5px solid $colorWhite;
+        }
+    }
+    
+    &-text {
+        height: 578px;
+        background-color: $colorWhite;
+        display: flex;
+        justify-content: center;
+        padding-top: 160px;
+        .content-title{
+            flex: 50%;
+            max-width: 470px;
+            font-size: 98px;
+            font-weight: bold;
+            margin-right: 90px;
+            span{
+                display: inline-block;
+                background-image: url("../images/face.svg");
+                width: 100px;
+                height: 100px;
+                background-size: cover;
+            }
+        }
+        .content-desc{
+            flex: 50%;
+            max-width: 605px;
+            .desc-main{
+                font-size: 40px;
+                font-weight: bold;
+                margin-bottom: 15px;
+                span{
+                    color: $colorBlue;
+                }
+            }
+            .desc-sub{
+                font-size: 22px;
+            }
+        }
+    }
+}
