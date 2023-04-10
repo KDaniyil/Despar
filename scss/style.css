@@ -115,40 +115,27 @@ table {
   height: 235px;
   position: absolute;
   bottom: 0;
-  border-bottom: 5px solid #ffffff;
 }
 .header-content-text {
-  height: 578px;
-  background-color: #ffffff;
-  display: flex;
-  justify-content: center;
   padding-top: 160px;
+  padding-bottom: 210px;
+  background-color: #ffffff;
 }
 .header-content-text .content-title {
-  flex: 50%;
-  max-width: 470px;
   font-size: 98px;
-  font-weight: bold;
-  margin-right: 90px;
+  padding-right: 90px;
+  text-align: right;
 }
-.header-content-text .content-title span {
+.header-content-text .content-title .face {
   display: inline-block;
   background-image: url("../images/face.svg");
   width: 100px;
   height: 100px;
   background-size: cover;
 }
-.header-content-text .content-desc {
-  flex: 50%;
-  max-width: 605px;
-}
 .header-content-text .content-desc .desc-main {
   font-size: 40px;
-  font-weight: bold;
   margin-bottom: 15px;
-}
-.header-content-text .content-desc .desc-main span {
-  color: #5aaee8;
 }
 .header-content-text .content-desc .desc-sub {
   font-size: 22px;
@@ -160,22 +147,154 @@ table {
 
 body {
   font-family: "Poppins", sans-serif;
-  overflow-x: clip;
-  max-width: 1920px;
-  width: 100%;
-  margin: 0 auto;
-}
-@media (max-width: 575px) {
-  body {
-    max-width: 360px;
-  }
 }
 
 a {
   text-decoration: none;
 }
 
+.bold {
+  font-weight: bold;
+}
+
+.orange {
+  color: #e87212;
+}
+
+.blue {
+  color: #5aaee8;
+}
+
+.wrapper {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+@media (max-width: 575px) {
+  .wrapper {
+    max-width: 360px;
+  }
+}
+
 .container {
   max-width: 1729px;
   margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 575px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+.col-4 {
+  flex: 0 0 33.33334%;
+  max-width: 33.33334%;
+}
+
+.col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+@media (max-width: 575px) {
+  .col-6 {
+    max-width: 100%;
+    flex: 100%;
+  }
+}
+
+.gioca-section {
+  background-color: #f7f7f7;
+  position: relative;
+}
+.gioca-section .hand img {
+  position: absolute;
+  left: -375px;
+  bottom: -75px;
+}
+.gioca-section .content {
+  padding-bottom: 175px;
+}
+.gioca-section .content .content-title {
+  margin-top: 200px;
+  font-size: 89px;
+}
+.gioca-section .content .content-desc {
+  margin-top: 45px;
+  max-width: 680px;
+}
+.gioca-section .content .content-desc .content-desc-title {
+  font-size: 42px;
+}
+.gioca-section .content .content-desc .content-desc-subtitle {
+  font-size: 32px;
+  margin-top: 50px;
+}
+.gioca-section .content .content-desc .content-desc-text {
+  margin-top: 30px;
+  font-size: 18px;
+}
+.gioca-section .content .content-desc .btn-gioca {
+  margin-top: 50px;
+  width: 196px;
+  height: 66px;
+  background-color: #e87212;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.5s ease;
+}
+.gioca-section .content .content-desc .btn-gioca:hover {
+  opacity: 0.8;
+  transition: all 0.5s ease;
+}
+
+.invita-section {
+  background-color: #ffffff;
+}
+.invita-section .friends {
+  margin-top: 45px;
+  background-image: url("../images/tipi.png");
+  background-size: contain;
+  min-height: 769px;
+  background-repeat: no-repeat;
+}
+.invita-section .invita-title {
+  font-size: 89px;
+  margin-top: 100px;
+}
+.invita-section .invita-text {
+  margin-top: 65px;
+  max-width: 714px;
+}
+.invita-section .invita-text-title {
+  font-size: 36px;
+  margin-bottom: 45px;
+}
+.invita-section .invita-text .how-work {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+.invita-section .invita-text .how-work-list {
+  display: flex;
+  margin-bottom: 30px;
+}
+.invita-section .invita-text .how-work-list .circle {
+  display: block;
+  flex-shrink: 0;
+  line-height: 30px;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  margin-right: 10px;
 }/*# sourceMappingURL=style.css.map */

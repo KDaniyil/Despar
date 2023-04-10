@@ -27,7 +27,6 @@
 
     }
 }
-
 .header-content {
     width: 100%;
     &-images {
@@ -74,23 +73,18 @@
             height: 235px;
             position: absolute;
             bottom: 0;
-            border-bottom: 5px solid $colorWhite;
         }
     }
     
     &-text {
-        height: 578px;
-        background-color: $colorWhite;
-        display: flex;
-        justify-content: center;
         padding-top: 160px;
+        padding-bottom: 210px;
+        background-color: $colorWhite;
         .content-title{
-            flex: 50%;
-            max-width: 470px;
             font-size: 98px;
-            font-weight: bold;
-            margin-right: 90px;
-            span{
+            padding-right: 90px;
+            text-align: right;
+            .face{
                 display: inline-block;
                 background-image: url("../images/face.svg");
                 width: 100px;
@@ -99,15 +93,9 @@
             }
         }
         .content-desc{
-            flex: 50%;
-            max-width: 605px;
             .desc-main{
                 font-size: 40px;
-                font-weight: bold;
                 margin-bottom: 15px;
-                span{
-                    color: $colorBlue;
-                }
             }
             .desc-sub{
                 font-size: 22px;

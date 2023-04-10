@@ -13,9 +13,9 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="topbar">
+    <div class="wrapper">
+        <header class="header">
+            <div class="topbar container">
                 <div class="logo"><a href="#"><img src="images/logo.png" alt="logo"></a></div>
                 <nav>
                     <ul class="menu">
@@ -32,44 +32,86 @@
                     </ul>
                 </div>
             </div>
-        </div>
-        <div class="header-content">
-            <div class="header-content-images">
-                <div class="nuvola"><img src="images/nuvola.png" alt="nuvola"></div>
-                <div class="nuvola2"><img src="images/nuvola2.png" alt="nuvola2"></div>
-                <div class="nuvola3"><img src="images/nuvola3.png" alt="nuvola3"></div>
-                <div class="despar-tribu"><img src="images/despar_tribu.png" alt="despar-tribu"></div>
-                <div class="pino"><img src="images/pino.png" alt="pino"></div>
-                <div class="nuvola-bottom"></div>
-            </div>
-            
-            <div class="header-content-text">
-                <div class="content-title">Ottobre è tipo...<span></span>!</div>
-                <div class="content-desc">
-                    <p class="desc-main">Dall’1 al 31 ottobre festeggia insieme a noi il mese dell’<span>App Despar Tribù!</span></p>
-                    <p class="desc-sub">Un mese pieno di novità ti aspetta.</p>
+            <div class="header-content">
+                <div class="header-content-images">
+                    <div class="nuvola"><img src="images/nuvola.png" alt="nuvola"></div>
+                    <div class="nuvola2"><img src="images/nuvola2.png" alt="nuvola2"></div>
+                    <div class="nuvola3"><img src="images/nuvola3.png" alt="nuvola3"></div>
+                    <div class="despar-tribu"><img src="images/despar_tribu.png" alt="despar-tribu"></div>
+                    <div class="pino"><img src="images/pino.png" alt="pino"></div>
+                    <div class="nuvola-bottom"></div>
+                </div>
+                <div class="header-content-text">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="content-title bold">Ottobre è <br /> tipo...<span class="face"></span>!
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="content-desc">
+                                    <p class="desc-main bold">Dall’1 al 31 ottobre <br /> festeggia insieme a noi <br /> il
+                                        mese dell’<span class="blue">App Despar Tribù!</span></p>
+                                    <p class="desc-sub">Un mese pieno di novità ti aspetta.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <main class="main">
-        <section id="gioca">
-            <div class="hand"></div>
-            <div class="content">
-                <div class="content-title"><h3>Gioca e risparmia</h3></div>
-                <div class="content-desc">
-                    <h4 class="content-desc-title">A grande richiesta <span>ritornano i giochi</span> che hanno appassionato tutta la Tribù!</h4>
-                    <p class="content-desc-subtitle">Scopri la nuova classifica.</p>
-                    <p class="content-desc-text">Ogni settimana i primi 1.000 giocatori classificati verranno premiati con Happy Card o Punti Cuore per aiutarti a risparmiare sulla spesa!</p>
-                    <a href="#games">Scopri di più</a>
+        </header>
+        <main class="main">
+            <section id="gioca" class="gioca-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="hand col-6"><img src="images/hand.png" alt=""></div>
+                        <div class="content col-6">
+                            <h3 class="content-title bold orange">Gioca e risparmia</h3>
+                            <div class="content-desc">
+                                <p class="content-desc-title bold">A grande richiesta <span class="orange">ritornano i giochi</span> che hanno appassionato tutta la Tribù!</p>
+                                <p class="content-desc-subtitle bold orange">Scopri la nuova classifica.</p>
+                                <p class="content-desc-text">Ogni settimana i primi <span class="bold">1.000 giocatori classificati</span> verranno premiati con <span class="bold">Happy Card</span> o <span class="bold">Punti Cuore</span> per aiutarti a risparmiare sulla spesa!</p>
+                                <a class="btn btn-gioca" href="#games">Scopri di più</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section id="invita"></section>
-        <section id="games"></section>
-        <section id="coupon"></section>
-    </main>
-    <footer class="footer"></footer>
+
+            </section>
+            <section id="invita" class="invita-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <h3 class="invita-title bold">Invita un amico</h3>
+                            <div class="invita-text">
+                                <p class="invita-text-title">Ottieni <span class="bold">5.000 Punti Cuore</span>
+                                    invitando i tuoi amici ad iscriversi 
+                                    alla <span class="bold blue">Despar Tribù</span>!</p>
+                                <p class="bold how-work">Come funziona?</p>
+                                <div class="how-work-list">
+                                    <span class="circle">1</span>
+                                    <p>Accedi all'app, apri il menù laterale e clicca sulla voce <br> "Porta un amico";</p>
+                                </div>
+                                <div class="how-work-list">
+                                    <span class="circle">2</span>
+                                    <p>Invita i tuoi amici inviandogli un messaggio <br>(whatsapp, sms, e-mail, ecc...);</p>
+                                </div>
+                                <div class="how-work-list">
+                                    <span class="circle">3</span>
+                                    <p>I tuoi amici riceveranno un <span class="bold">coupon di benvenuto</span>, per te, <span class="bold"> 5.000 Punti Cuore</span> quando utilizzeranno il coupon di benvenuto.</p>
+                                </div>
+                                <p> Se non vedi le nuove funzioni, aggiorna l'App all'ultima versione rilasciata.</p>
+                            </div>
+                        </div>
+                        <div class="col-6"><div class="friends"></div></div>
+                    </div>
+                </div>
+            </section>
+            <section id="games"></section>
+            <section id="coupon"></section>
+        </main>
+        <footer class="footer"></footer>
+    </div>
 </body>
 
 </html>
