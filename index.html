@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="scss/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -131,40 +132,43 @@
                             <h3 class="games-title bold">I giochi</h3>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-4">
-                            <div class="card">
-                                <div class="card-inner">
-                                    <div class="card-front">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card-inner">
+                                        <div class="card-front">
+                                        </div>
+                                        <div class="card-back">
+                                            <a class="btn-card" href="#">Scopri di più</a>
+                                        </div>
                                     </div>
-                                    <div class="card-back">
-                                        <a class="btn-card" href="#">Scopri di più</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card-inner">
+                                        <div class="card-front">
+                                        </div>
+                                        <div class="card-back">
+                                            <a class="btn-card" href="#">Scopri di più</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card-inner">
+                                        <div class="card-front">
+                                        </div>
+                                        <div class="card-back">
+                                            <a class="btn-card" href="#">Scopri di più</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
-                            <div class="card">
-                                <div class="card-inner">
-                                    <div class="card-front">
-                                    </div>
-                                    <div class="card-back">
-                                        <a class="btn-card" href="#">Scopri di più</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="card">
-                                <div class="card-inner">
-                                    <div class="card-front">
-                                    </div>
-                                    <div class="card-back">
-                                        <a class="btn-card" href="#">Scopri di più</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </section>
@@ -196,8 +200,33 @@
             | © Copyright Despar 2022
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="app.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          breakpoints: {
+            640: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 1,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+          },
+        });
+      </script>
 </body>
 
 </html>
