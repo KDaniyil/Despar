@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="scss/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,12 +24,18 @@
                         <li class="menu-item"><a class="menu-item-link" href="#invita">INVITA UN AMICO</a></li>
                         <li class="menu-item"><a class="menu-item-link" href="#coupon">COUPON DI BENVENUTO</a></li>
                     </ul>
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
                 </nav>
                 <div class="language">
-                    <ul class="menu-lang">
-                        <li>ITA</li>
-                        <li>DEU</li>
-                    </ul>
+                    <a href="#" class="dropdown">Ita</a>
+                    <div class="dropdown-menu hide">
+                        <a href="#" class="dropdown-link"><span class="bandiera-ita"></span>Ita</a>
+                        <a href="#" class="dropdown-link"><span class="bandiera-deu"></span>Deu</a>
+                    </div>
                 </div>
             </div>
             <div class="header-content">
@@ -45,12 +51,11 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-6">
-                                <div class="content-title bold">Ottobre è <br /> tipo...<span class="face"></span>!
-                                </div>
+                                <div class="content-title bold">Ottobre è <br /> tipo...<span class="face"></span>!</div>
                             </div>
                             <div class="col-6">
                                 <div class="content-desc">
-                                    <p class="desc-main bold">Dall’1 al 31 ottobre <br /> festeggia insieme a noi <br /> il
+                                    <p class="desc-main bold">Dall’1 al 31 ottobre <br /> festeggia insieme a noi <br />il
                                         mese dell’<span class="blue">App Despar Tribù!</span></p>
                                     <p class="desc-sub">Un mese pieno di novità ti aspetta.</p>
                                 </div>
@@ -68,15 +73,18 @@
                         <div class="content col-6">
                             <h3 class="content-title bold orange">Gioca e risparmia</h3>
                             <div class="content-desc">
-                                <p class="content-desc-title bold">A grande richiesta <span class="orange">ritornano i giochi</span> che hanno appassionato tutta la Tribù!</p>
+                                <p class="content-desc-title bold">A grande richiesta <span class="orange">ritornano i
+                                        giochi</span> che hanno appassionato tutta la Tribù!</p>
                                 <p class="content-desc-subtitle bold orange">Scopri la nuova classifica.</p>
-                                <p class="content-desc-text">Ogni settimana i primi <span class="bold">1.000 giocatori classificati</span> verranno premiati con <span class="bold">Happy Card</span> o <span class="bold">Punti Cuore</span> per aiutarti a risparmiare sulla spesa!</p>
+                                <p class="content-desc-text">Ogni settimana i primi <span class="bold">1.000 giocatori
+                                        classificati</span> verranno premiati con <span class="bold">Happy Card</span> o
+                                    <span class="bold">Punti Cuore</span> per aiutarti a risparmiare sulla spesa!</p>
                                 <a class="btn btn-gioca" href="#games">Scopri di più</a>
                             </div>
                         </div>
                     </div>
                 </div>
-
+    
             </section>
             <section id="invita" class="invita-section">
                 <div class="container">
@@ -85,33 +93,107 @@
                             <h3 class="invita-title bold">Invita un amico</h3>
                             <div class="invita-text">
                                 <p class="invita-text-title">Ottieni <span class="bold">5.000 Punti Cuore</span>
-                                    invitando i tuoi amici ad iscriversi 
+                                    invitando i tuoi amici ad iscriversi
                                     alla <span class="bold blue">Despar Tribù</span>!</p>
                                 <p class="bold how-work">Come funziona?</p>
                                 <div class="how-work-list">
                                     <span class="circle">1</span>
-                                    <p>Accedi all'app, apri il menù laterale e clicca sulla voce <br> "Porta un amico";</p>
+                                    <p>Accedi all'app, apri il menù laterale e clicca sulla voce <br> "Porta un amico";
+                                    </p>
                                 </div>
                                 <div class="how-work-list">
                                     <span class="circle">2</span>
-                                    <p>Invita i tuoi amici inviandogli un messaggio <br>(whatsapp, sms, e-mail, ecc...);</p>
+                                    <p>Invita i tuoi amici inviandogli un messaggio <br>(whatsapp, sms, e-mail, ecc...);
+                                    </p>
                                 </div>
                                 <div class="how-work-list">
                                     <span class="circle">3</span>
-                                    <p>I tuoi amici riceveranno un <span class="bold">coupon di benvenuto</span>, per te, <span class="bold"> 5.000 Punti Cuore</span> quando utilizzeranno il coupon di benvenuto.</p>
+                                    <p>I tuoi amici riceveranno un <span class="bold">coupon di benvenuto</span>, per
+                                        te, <span class="bold"> 5.000 Punti Cuore</span> quando utilizzeranno il coupon
+                                        di benvenuto.</p>
                                 </div>
                                 <p> Se non vedi le nuove funzioni, aggiorna l'App all'ultima versione rilasciata.</p>
                             </div>
                         </div>
-                        <div class="col-6"><div class="friends"></div></div>
+                        <div class="col-6">
+                            <div class="friends"></div>
+                        </div>
                     </div>
                 </div>
             </section>
-            <section id="games"></section>
-            <section id="coupon"></section>
+            <section id="games" class="games-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="games-title bold">I giochi</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="card">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                    </div>
+                                    <div class="card-back">
+                                        <a class="btn-card" href="#">Scopri di più</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                    </div>
+                                    <div class="card-back">
+                                        <a class="btn-card" href="#">Scopri di più</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                    </div>
+                                    <div class="card-back">
+                                        <a class="btn-card" href="#">Scopri di più</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="coupon" class="coupon-section">
+                <div class="row">
+                    <div class="coupon col-8">
+                        <h3 class="coupon-title bold"> <span>Per te un</span> coupon di benvenuto di 5 €</h3>
+                    </div>
+                    <div class="app-info col-4">
+                        <h3 class="app-info-title bold">Se non l’hai ancora fatto scarica l’<span class="blue">App</span>!
+                        </h3>
+                        <p class="app-info-desc bold">Subito per te un Coupon di Benvenuto di <span class="blue">5
+                                €*</span> .</p>
+                        <div class="app-info-btns row">
+                            <a href="#" class="info-btn">App Store</a>
+                            <a href="#" class="info-btn">Goggle Play</a>
+                            <a href="#" class="info-btn">App Gallery</a>
+                        </div>
+                        <p class="app-info-text">*non franzionabile e spendibile su una <span class="bold">spesa minima
+                                di 5 €</span>. Ad esclusione di quotidiani e riviste, Happy Card Despar, farmaci da
+                            banco, pagamento utenze e latte prima infanzia. <br><br> Riservato a chi si iscrive alla
+                            <span class="bold">Despar Tribù</span> dall’1 al 31 ottobre 2022.</p>
+                    </div>
+                </div>
+            </section>
         </main>
-        <footer class="footer"></footer>
+        <footer class="footer">
+            <a class="bold" href="https://www.despar.it/" target="_blank">www.despar.it</a>
+            | © Copyright Despar 2022
+        </footer>
     </div>
+    <script src="app.js"></script>
 </body>
 
 </html>

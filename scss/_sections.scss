@@ -1,0 +1,227 @@
+.gioca-section {
+    background-color: $backgroundGrey;
+    position: relative;
+    .hand{
+        img{
+            position: absolute;
+            left: -375px;
+            bottom: -75px;
+            
+        }
+    }
+    .content {
+        padding-bottom: 175px;
+        .content-title {
+            margin-top: 200px;
+            font-size: 89px;
+        }
+        .content-desc {
+            margin-top: 45px;
+            max-width: 680px;
+
+            .content-desc-title {
+                font-size: 42px;
+            }
+
+            .content-desc-subtitle {
+                font-size: 32px;
+                margin-top: 50px;
+            }
+
+            .content-desc-text {
+                margin-top: 30px;
+                font-size: 18px;
+            }
+
+            .btn-gioca {
+                margin-top: 50px;
+                width: 196px;
+                height: 66px;
+                background-color: $colorOrange;
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50px;
+                @include transitionEff;
+                &:hover {
+                    opacity: 0.8;
+                    @include transitionEff;
+                }
+            }
+        }
+    }
+}
+.invita-section{
+    background-color: $colorWhite;
+    .friends{
+        margin-top: 45px;
+        background-image: url("../images/tipi.png");
+        background-size: contain;
+        min-height: 769px;
+        background-repeat: no-repeat;
+    }
+    .invita-title{
+        font-size: 89px;
+        margin-top: 100px;
+    }
+    .invita-text{
+        margin-top: 65px;
+        max-width: 714px;
+        &-title{
+            font-size: 36px;
+            margin-bottom: 45px;
+        }
+        .how-work{
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+        .how-work-list{
+            display: flex;
+            margin-bottom: 30px;
+            .circle{
+                display: block;
+                flex-shrink: 0;
+                line-height: 30px;
+                text-align: center;
+                width: 30px;
+                height: 30px;
+                background-color: red;
+                color: white;
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+.games-section{
+    background-color: $backgroundGrey;
+    background-image: url("../images/righe.png"), url("../images/disegnini.png");
+    background-size: cover, cover;
+    .games-title{
+        margin-top: 70px;
+        margin-bottom: 140px;
+        font-size: 89px;
+        text-align: center;
+    }
+    .card{
+        border: 5px solid white;
+        border-radius: 20px;
+        max-width: calc(100% - 45px);
+        height: 690px;
+        box-shadow: 0px 0px 10px 1px #000000;
+        margin-bottom: 230px;
+        perspective: 1000px;
+    }
+    .card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transition: transform 1s;
+        transform-style: preserve-3d;
+      }
+      .card:hover .card-inner {
+        transform: rotateY(180deg);
+      }
+      .card-front, .card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+      }
+    .card-front{
+        background:
+        url("../images/cuore_card.png") no-repeat center, 
+        url("../images/scuro.png") bottom,#75bdef;
+        background-size: contain;
+    }
+    .card-back{
+        transform: rotateY(180deg);
+        position: relative;
+        background: url("../images/trislogo.png") no-repeat center top 40%,url("../images/tris.png"),linear-gradient(180deg, rgba(116,184,51,1) 30%, rgba(23,128,46,1) 70%);
+        .btn-card{
+            position: relative;
+            margin: 0 auto;
+            top: 65%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 187px;
+            height: 60px;
+            border: 5px solid rgba(235,125,16,1);
+            background: linear-gradient(180deg, rgba(248,172,110,1) 50%, rgba(235,125,16,1) 100%);
+            color: white;
+            font-size: 18px;
+            border-radius: 50px;
+            box-shadow: 15px 20px 40px 5px rgba(0,0,0,0.70);
+            @include transitionEff;
+            &:hover{
+                background: linear-gradient(180deg,rgba(235,125,16,1) 50%, rgba(248,172,110,1) 100%);
+                border-color: linear-gradient(180deg,rgba(235,125,16,1) 50%, rgba(248,172,110,1) 100%);
+                @include transitionEff;
+            }
+        }
+    }
+    .card > .card-front{
+    position: absolute;
+    transform: perspective(600px) rotateY(0deg);
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: transform .5s linear 0s;
+}
+}
+.coupon-section{
+    width: 100%;
+    .coupon{
+        background: url("../images/logo_app.png") no-repeat, $colorBlue;
+        background-position: top 75px right 200px;
+        min-height: 575px;
+        display: flex;
+        align-items: center;
+        padding-left: 100px;
+        .coupon-title{
+            font-size: 91px;
+            max-width: 606px;
+            span{
+                color: $colorWhite;
+            }
+        }
+    }
+    .app-info{
+        background-color: $colorWhite;
+        padding-left: 60px;
+        margin-top: 85px;
+        &-title{
+            font-size: 47px;
+            margin-bottom: 35px;
+        }
+        &-desc{
+            font-size: 24px;
+            max-width: 463px;
+            margin-bottom: 40px;
+        }
+        &-btns{
+            margin-bottom: 40px;
+            gap: 15px;
+            .info-btn{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 171px;
+                height: 65px;
+                background-color: black;
+                color: $colorWhite;
+                border-radius: 30px;
+                &:hover{
+                    opacity: 0.8;
+                    @include transitionEff;
+                }
+            }
+        }
+        &-text{
+            max-width: 527px;
+            font-size: 14px;
+        }
+    }
+}
