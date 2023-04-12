@@ -130,31 +130,51 @@ table {
 .header-content-images .nuvola {
   position: absolute;
   top: 415px;
-  overflow: hidden;
-}
-.header-content-images .nuvola img {
+  background-image: url("../images/nuvola.png");
+  background-repeat: no-repeat;
   margin-left: -150px;
+  width: 527px;
+  height: 245px;
+  animation: move 5s ease infinite;
 }
 .header-content-images .nuvola2 {
   position: absolute;
   right: 10px;
   top: 88px;
+  background-image: url("../images/nuvola2.png");
+  background-repeat: no-repeat;
+  width: 434px;
+  height: 193px;
+  animation: move 5s ease infinite;
 }
 .header-content-images .nuvola3 {
   position: absolute;
   top: 50px;
+  background-image: url("../images/nuvola3.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
 }
 .header-content-images .despar-tribu {
   position: absolute;
   top: 72px;
   left: 356px;
   z-index: 5;
+  background-image: url("../images/despar_tribu.png");
+  background-repeat: no-repeat;
+  width: 786px;
+  height: 709px;
 }
 .header-content-images .pino {
   position: absolute;
   top: 43px;
   right: 108px;
   z-index: 6;
+  background-image: url("../images/pino.png");
+  background-repeat: no-repeat;
+  width: 1391px;
+  height: 764px;
+  animation: move 5s ease infinite;
 }
 .header-content-images .nuvola-bottom {
   width: 100%;
@@ -162,6 +182,11 @@ table {
   height: 235px;
   position: absolute;
   bottom: 0;
+}
+@keyframes move {
+  50% {
+    transform: translateY(-20px);
+  }
 }
 .header-content-text {
   padding-top: 160px;
@@ -300,6 +325,7 @@ table {
   }
 }
 .gioca-section .hand img {
+  display: block;
   position: absolute;
   left: -375px;
   bottom: -75px;

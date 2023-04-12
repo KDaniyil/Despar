@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="scss/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,11 +41,11 @@
             </div>
             <div class="header-content">
                 <div class="header-content-images">
-                    <div class="nuvola"><img src="images/nuvola.png" alt="nuvola"></div>
-                    <div class="nuvola2"><img src="images/nuvola2.png" alt="nuvola2"></div>
-                    <div class="nuvola3"><img src="images/nuvola3.png" alt="nuvola3"></div>
-                    <div class="despar-tribu"><img src="images/despar_tribu.png" alt="despar-tribu"></div>
-                    <div class="pino"><img src="images/pino.png" alt="pino"></div>
+                    <div class="nuvola"></div>
+                    <div class="nuvola2"></div>
+                    <div class="nuvola3"></div>
+                    <div class="despar-tribu"></div>
+                    <div class="pino"></div>
                     <div class="nuvola-bottom"></div>
                 </div>
                 <div class="header-content-text">
@@ -69,7 +70,9 @@
             <section id="gioca" class="gioca-section">
                 <div class="container">
                     <div class="row">
-                        <div class="hand col-6"><img src="images/hand.png" alt=""></div>
+                        <div class="col-6">
+                            <div class="hand"><img data-aos="fade-right" data-aos-duration="1000" src="images/hand.png" alt=""></div>
+                        </div>
                         <div class="content col-6">
                             <h3 class="content-title bold orange">Gioca e risparmia</h3>
                             <div class="content-desc">
@@ -193,6 +196,7 @@
             | © Copyright Despar 2022
         </footer>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="app.js"></script>
 </body>
 
