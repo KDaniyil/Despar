@@ -49,6 +49,13 @@ a {
         flex-direction: column;
     }
 }
+
+@media(max-width: $breakpoint_sm){
+    .wrapper [class*="col"]{
+    flex: 100%;
+    max-width: 100%;
+    }
+}
 .col-4 {
     flex: 0 0 33.33334%;
     max-width: 33.33334%;

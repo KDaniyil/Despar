@@ -2,6 +2,9 @@
     background-color: $backgroundGrey;
     position: relative;
     .hand{
+        @media(max-width: $breakpoint_sm){
+            display: none;
+        }
         img{
             position: absolute;
             left: -375px;
@@ -11,9 +14,13 @@
     }
     .content {
         padding-bottom: 175px;
+
         .content-title {
             margin-top: 200px;
             font-size: 89px;
+            @media(max-width: $breakpoint_sm){
+                font-size: 50px;
+            }
         }
         .content-desc {
             margin-top: 45px;
@@ -179,8 +186,16 @@
         min-height: 575px;
         display: flex;
         align-items: center;
+        @media(max-width: $breakpoint_sm){
+            padding-left: 0;
+            background-position: top right;
+        }
         padding-left: 100px;
         .coupon-title{
+            @media(max-width: $breakpoint_sm){
+                font-size: 50px;
+                text-align: left;
+            }
             font-size: 91px;
             max-width: 606px;
             span{

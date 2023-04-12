@@ -173,6 +173,12 @@ table {
   padding-right: 90px;
   text-align: right;
 }
+@media (max-width: 576px) {
+  .header-content-text .content-title {
+    font-size: 50px;
+    text-align: center;
+  }
+}
 .header-content-text .content-title .face {
   display: inline-block;
   background-image: url("../images/face.svg");
@@ -288,6 +294,11 @@ table {
   background-color: #f7f7f7;
   position: relative;
 }
+@media (max-width: 576px) {
+  .gioca-section .hand {
+    display: none;
+  }
+}
 .gioca-section .hand img {
   position: absolute;
   left: -375px;
@@ -299,6 +310,11 @@ table {
 .gioca-section .content .content-title {
   margin-top: 200px;
   font-size: 89px;
+}
+@media (max-width: 576px) {
+  .gioca-section .content .content-title {
+    font-size: 50px;
+  }
 }
 .gioca-section .content .content-desc {
   margin-top: 45px;
@@ -462,9 +478,21 @@ table {
   align-items: center;
   padding-left: 100px;
 }
+@media (max-width: 576px) {
+  .coupon-section .coupon {
+    padding-left: 0;
+    background-position: top right;
+  }
+}
 .coupon-section .coupon .coupon-title {
   font-size: 91px;
   max-width: 606px;
+}
+@media (max-width: 576px) {
+  .coupon-section .coupon .coupon-title {
+    font-size: 50px;
+    text-align: left;
+  }
 }
 .coupon-section .coupon .coupon-title span {
   color: #ffffff;
@@ -558,6 +586,12 @@ a {
   }
 }
 
+@media (max-width: 576px) {
+  .wrapper [class*=col] {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
 .col-4 {
   flex: 0 0 33.33334%;
   max-width: 33.33334%;

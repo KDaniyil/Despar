@@ -127,6 +127,10 @@
 
         .content-title {
             font-size: 98px;
+            @media(max-width: $breakpoint_sm){
+                font-size: 50px;
+                text-align: center;
+            }
             padding-right: 90px;
             text-align: right;
 
